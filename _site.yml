@@ -9,6 +9,9 @@ navbar:
     - text: "GIS Work"
       icon: fa-pen 
       href: geog176A.html
+    - text: "Resume/CV"
+      icon: fa-file
+      href: resume.html 
 output:
   html_document:
     theme: cosmo
