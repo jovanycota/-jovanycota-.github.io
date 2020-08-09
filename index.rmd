@@ -1,0 +1,11 @@
+---
+title: "About Me" 
+---
+  
+<center>
+# Hi, I'm Jovany Cota!
+</center>
+  
+I am a Third Year Geography Major from Los Angeles, CA. My interests include: poverty, housing inequality, and education. My hobbies include: soccer, playing chess, and painting. 
+
+![](img/IMG_1191.JPG)

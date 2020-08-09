@@ -1,0 +1,14 @@
+name: "Jovany Cota"
+output_dir: "."
+navbar:
+  title: "Jovany's Website"
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "GIS Work"
+      icon: fa-pen 
+      href: geog176A.html
+output:
+  html_document:
+    theme: cosmo

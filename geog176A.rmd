@@ -1,0 +1,15 @@
+---
+title: "Projects"
+---
+
+In the second-half of Summer 2020, I took an introductory course about GIS based in R. I wrote some code, and did some cool data science. Here is a collection of links! 
+
+## [Building a project website](https://github.com/jovanycota?tab=repositories)
+
+- I learned the importance of properly designating files in the correct repository. 
+- I learned how to create my own website and how to personalize it.
+- I learned how to upload an image in separate documents using coding. 
+
+<center>
+<i class="fas fa-rocket fa-8x"></i> 
+</center>
