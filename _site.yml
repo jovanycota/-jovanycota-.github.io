@@ -11,7 +11,10 @@ navbar:
       href: geog176A.html
     - text: "Resume/CV"
       icon: fa-file
-      href: resume.html 
+      href: resume.html
+  right:
+    - icon: fa-github
+    - href: (https://github.com/jovanycota)
 output:
   html_document:
     theme: cosmo
