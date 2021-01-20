@@ -4,15 +4,18 @@ title: "Jovany Cota"
 
 ## Education
 - **2020** 
-Third year Geography major Undergraduate @ University of California, Santa Barbara
+Third year Geography major (GIS emphasis) Undergraduate @ University of California, Santa Barbara
 
 ## Experience
-- **2020**
-  Intern for Los Padres Forest Watch: Manage Social Media and   promoting events, creating blog posts and conducting       research for future references. 
+-Intern for Los Padres Forest Watch (05/20-11/20): Manage Social Media and   promote events, creating blog posts and conducting       research for future references. 
 
-## Strengths
-- Proficient in R language
-- Basics in Excel
+-MOVE Lab @ UCSB researcher (10/20-NOW): worked along with a group of graduate students studying COVID-19 transmission & mobility in wildfire impacted areas as a project funded by CAMP (California Allegiance for Minorities Program).
+
+## Skills
+- Experienced with R
+- Basics in Excel & ArcGis Pro 
+- Beginner with Inkscape and GIMP
+- Experienced with photoshop (Adode photoshop)
 
 ## Extracurricular Activities
 - President of the Kappa Chapter Sigma Delta Alpha Fraternity, Inc at the University of California, Santa Barbara
