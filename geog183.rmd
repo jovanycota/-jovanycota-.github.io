@@ -15,3 +15,10 @@ This page is dedicated to labs pertaining to GEOG 183 (WINTER 2021)
 ## LAB 2 
 
 ![](img/ca-covid-geog183.png)
+
+
+
+
+## LAB 3
+
+![](img/lab03_geog183.png)
