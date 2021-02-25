@@ -28,3 +28,9 @@ This page is dedicated to labs pertaining to GEOG 183 (WINTER 2021)
 ## LAB 4
 
 ![](img/lab4_geog183.png)
+
+
+
+## LAB 5 
+
+[COVID-19 Dashboard](https://jovanycota.shinyapps.io/COVID19-Dashboard-News-Updates/)
