@@ -11,7 +11,10 @@ navbar:
       href: geog176A.html
     - text: "GEOG 183"
       icon: fa-pen
-      href: geog183.html 
+      href: geog183.html
+    - text: "GEOG 165"
+      icon: fa-pen
+      href: geog165.html
     - text: "Resume/CV"
       icon: fa-file
       href: resume.html
