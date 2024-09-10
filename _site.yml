@@ -1,7 +1,7 @@
 name: "Jovany Cota"
 output_dir: "."
 navbar:
-  title: "Jovany's Website"
+  title: "Jovany's Portfolio"
   left:
     - text: "Home"
       icon: fa-home
@@ -12,9 +12,6 @@ navbar:
     - text: "GEOG 183"
       icon: fa-pen
       href: geog183.html
-    - text: "GEOG 165"
-      icon: fa-pen
-      href: geog165.html
     - text: "Resume/CV"
       icon: fa-file
       href: resume.html
