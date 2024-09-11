@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: " GIS Projects"
 ---
 
 These projects were executed with the help of a variety of programs, including RStudio, ArcGIS, QGIS, Inkscape, GIMP, MATLAB, and GeoDa. Through these experiences, I gained valuable expertise in working with both vector and raster data.
