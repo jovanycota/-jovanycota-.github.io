@@ -2,17 +2,40 @@
 title: "Jovany Cota"
 ---
 
+
+## Summary
+An industrious and meticulous professional with a strong work ethic and exceptional resourcefulness, adept at juggling multiple projects in deadline-driven settings. Known for outstanding organizational prowess and effective communication abilities, consistently delivering results with precision and efficiency.
+
 ## Education
+### University of California	Santa Barbara, CA
+- Bachelor of Arts, Geography (GIS Emphasis) - Spring 2022
 
 ## Experience
+### ID Plans (Tampa, FL)
+#### Field Data Specialist (April 2023 - Present) 
+- Develop detailed maps for commercial, tenant, and retail properties, highlighting utilities and all onsite amenities, tailored for property management solutions.
+- Ensure meticulous attention to detail and accuracy in all aspects of data collection, surveying, and entry, adhering closely to client-specific instructions to maintain the quality and credibility of site survey property inspection plans.
+- Utilize technical proficiency in the daily operation of laser measuring tools, 3D cameras, aerial maps, and specialized software for efficient data entry, surveyor mapping, and comprehensive reporting.
+- Demonstrate exceptional organizational and time management skills to meet project deadlines effectively. Prioritize tasks and execute them efficiently, following instructions meticulously to achieve project goals with minimal oversight.
+- Flexibly navigate changing circumstances in commercial property inspection settings, finding innovative solutions to ensure project success.
+
+### Apple Maps Via RMSI North America Inc.	(Sunnyvale, CA)
+#### GIS Technician (May 2022 - April 2023)
+- Conducted meticulous 3D terrain and land cover edits to align with real-world data, addressing user-reported inconsistencies effectively.
+- Crafted user-friendly 2D/3D maps using advanced GIS software and methodologies, enhancing accessibility for Apple Maps users.
+- Directed the development of 3D landmark models, overseeing all stages from conceptualization to final production, ensuring accuracy and quality.
+- Analyzed and rectified mapping irregularities within extensive JSON/Python datasets, ensuring data integrity and accuracy.
+
+### UCSB Movement Data Science Lab (Santa Barbara, CA)
+#### Research Assistant	(October 2020 – April 2022)
+- Investigated the dynamics of human mobility in wildfire-affected regions amidst the COVID-19 Pandemic, contributing to pioneering research efforts.
+- Employed advanced statistical and spatial analysis techniques to dissect extensive datasets, under the guidance of Dr. Somayeh Dodge, to unveil nuanced insights.
+- Crafted and curated a repository of maps, plots, and visual aids, ensuring effective dissemination of research outcomes to diverse stakeholders.
+- Utilized GIS software to execute sophisticated statistical analysis, pinpointing anomalies and trends within the collected data for comprehensive understanding.
 
 ## Skills
-- Experienced with R
-- Basics in Excel & ArcGis Pro 
-- Beginner with Inkscape and GIMP
-- Experienced with photoshop (Adode photoshop)
-
-
-
-## SUMMER 2021
-I will be working on continuing my research on Wildfires through the Summer CAMP internship at UCSB.
+- Advanced in Rstudio, ArcGis, Python, QGIS
+- Spatial Data Analysis
+- Mapping & Cartography
+- Data Collection & Database Management 
+- Data Visualization

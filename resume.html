@@ -13,24 +13,38 @@
 
 <title>Jovany Cota</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -43,32 +57,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -78,10 +68,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -98,40 +84,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -159,7 +121,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -171,7 +133,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -181,11 +143,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -197,13 +176,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -211,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -264,12 +235,12 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Jovany's Website</a>
+      <a class="navbar-brand" href="index.html">Jovany's Portfolio</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -285,13 +256,6 @@ $(document).ready(function () {
     <span class="fa fa-pen"></span>
      
     GIS Work
-  </a>
-</li>
-<li>
-  <a href="geog183.html">
-    <span class="fa fa-pen"></span>
-     
-    GEOG 183
   </a>
 </li>
 <li>
@@ -317,7 +281,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -326,31 +290,103 @@ $(document).ready(function () {
 </div>
 
 
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p>An industrious and meticulous professional with a strong work ethic
+and exceptional resourcefulness, adept at juggling multiple projects in
+deadline-driven settings. Known for outstanding organizational prowess
+and effective communication abilities, consistently delivering results
+with precision and efficiency.</p>
+</div>
 <div id="education" class="section level2">
 <h2>Education</h2>
+<div id="university-of-california-santa-barbara-ca"
+class="section level3">
+<h3>University of California Santa Barbara, CA</h3>
 <ul>
-<li><strong>2020</strong> Third year Geography major (GIS emphasis) Undergraduate @ University of California, Santa Barbara</li>
+<li>Bachelor of Arts, Geography (GIS Emphasis) - Spring 2022</li>
 </ul>
+</div>
 </div>
 <div id="experience" class="section level2">
 <h2>Experience</h2>
-<p>-Intern for Los Padres Forest Watch (05/20-11/20): Manage Social Media and promote events, creating blog posts and conducting research for future references.</p>
-<p>-MOVE Lab @ UCSB researcher (10/20-NOW): worked along with a group of graduate students studying COVID-19 transmission &amp; mobility in wildfire impacted areas as a project funded by CAMP (California Allegiance for Minorities Program).</p>
+<div id="id-plans-tampa-fl" class="section level3">
+<h3>ID Plans (Tampa, FL)</h3>
+<div id="field-data-specialist-april-2023---present"
+class="section level4">
+<h4>Field Data Specialist (April 2023 - Present)</h4>
+<ul>
+<li>Develop detailed maps for commercial, tenant, and retail properties,
+highlighting utilities and all onsite amenities, tailored for property
+management solutions.</li>
+<li>Ensure meticulous attention to detail and accuracy in all aspects of
+data collection, surveying, and entry, adhering closely to
+client-specific instructions to maintain the quality and credibility of
+site survey property inspection plans.</li>
+<li>Utilize technical proficiency in the daily operation of laser
+measuring tools, 3D cameras, aerial maps, and specialized software for
+efficient data entry, surveyor mapping, and comprehensive
+reporting.</li>
+<li>Demonstrate exceptional organizational and time management skills to
+meet project deadlines effectively. Prioritize tasks and execute them
+efficiently, following instructions meticulously to achieve project
+goals with minimal oversight.</li>
+<li>Flexibly navigate changing circumstances in commercial property
+inspection settings, finding innovative solutions to ensure project
+success.</li>
+</ul>
+</div>
+</div>
+<div id="apple-maps-via-rmsi-north-america-inc.-sunnyvale-ca"
+class="section level3">
+<h3>Apple Maps Via RMSI North America Inc. (Sunnyvale, CA)</h3>
+<div id="gis-technician-may-2022---april-2023" class="section level4">
+<h4>GIS Technician (May 2022 - April 2023)</h4>
+<ul>
+<li>Conducted meticulous 3D terrain and land cover edits to align with
+real-world data, addressing user-reported inconsistencies
+effectively.</li>
+<li>Crafted user-friendly 2D/3D maps using advanced GIS software and
+methodologies, enhancing accessibility for Apple Maps users.</li>
+<li>Directed the development of 3D landmark models, overseeing all
+stages from conceptualization to final production, ensuring accuracy and
+quality.</li>
+<li>Analyzed and rectified mapping irregularities within extensive
+JSON/Python datasets, ensuring data integrity and accuracy.</li>
+</ul>
+</div>
+</div>
+<div id="ucsb-movement-data-science-lab-santa-barbara-ca"
+class="section level3">
+<h3>UCSB Movement Data Science Lab (Santa Barbara, CA)</h3>
+<div id="research-assistant-october-2020-april-2022"
+class="section level4">
+<h4>Research Assistant (October 2020 – April 2022)</h4>
+<ul>
+<li>Investigated the dynamics of human mobility in wildfire-affected
+regions amidst the COVID-19 Pandemic, contributing to pioneering
+research efforts.</li>
+<li>Employed advanced statistical and spatial analysis techniques to
+dissect extensive datasets, under the guidance of Dr. Somayeh Dodge, to
+unveil nuanced insights.</li>
+<li>Crafted and curated a repository of maps, plots, and visual aids,
+ensuring effective dissemination of research outcomes to diverse
+stakeholders.</li>
+<li>Utilized GIS software to execute sophisticated statistical analysis,
+pinpointing anomalies and trends within the collected data for
+comprehensive understanding.</li>
+</ul>
+</div>
+</div>
 </div>
 <div id="skills" class="section level2">
 <h2>Skills</h2>
 <ul>
-<li>Experienced with R</li>
-<li>Basics in Excel &amp; ArcGis Pro</li>
-<li>Beginner with Inkscape and GIMP</li>
-<li>Experienced with photoshop (Adode photoshop)</li>
-</ul>
-</div>
-<div id="extracurricular-activities" class="section level2">
-<h2>Extracurricular Activities</h2>
-<ul>
-<li>President of the Kappa Chapter Sigma Delta Alpha Fraternity, Inc at the University of California, Santa Barbara</li>
-<li>Promise Scholar Mentorship: I am the mentor of two incoming freshmen as I guide them throughout their summer introductory program to university life.</li>
+<li>Advanced in Rstudio, ArcGis, Python, QGIS</li>
+<li>Spatial Data Analysis</li>
+<li>Mapping &amp; Cartography</li>
+<li>Data Collection &amp; Database Management</li>
+<li>Data Visualization</li>
 </ul>
 </div>
 
@@ -363,7 +399,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -381,7 +417,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
