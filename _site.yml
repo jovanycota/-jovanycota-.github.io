@@ -9,7 +9,7 @@ navbar:
     - text: "GIS Work"
       icon: fa-pen 
       href: geog176A.html
-    - text: "Resume/CV"
+    - text: "Resume"
       icon: fa-file
       href: resume.html
   right:
