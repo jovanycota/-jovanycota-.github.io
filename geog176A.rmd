@@ -10,7 +10,7 @@ The links below can be used to view the code and process used to create the outp
 - Understanding whether or not a change in the average of COVID-19 cases is related to the presence of a wildfire nearby. 
 - Used anonymous GPS pings from mobile devices of an area to track population flow patterns utilizing Rstudio and ArcGis.
 
-![](img/c19wf.png)
+![](img/c19wf.PNG)
 
 
 ## Distribution of the Land Cover Change in Delhi, India
