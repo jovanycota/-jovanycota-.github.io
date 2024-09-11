@@ -2,15 +2,10 @@
 title: "Projects"
 ---
 
-In the second-half of Summer 2020, I took an introductory course about GIS based in R. I wrote some code, and did some cool data science. Here is a collection of links! 
+These projects were completed using the following: Rstudio, ArcGIS, QGIS, Inkscape, GIMP, MATLAB & GEODA
 
-### GEOG 176A
-
-## [Lab 2](https://jovanycota.github.io/GEOG-176A-lab/lab-02.html)
-- I learned how to properly plot graphs using the ggplot function.
-- I learned how to join two different data sets together using the left, right, inner, full, and semi join functions and the difference between each of them.
-- I learned how to apply lag and rolling functions for feature-based time data.
-- In this lab, I chose how to visually represent real-time COVID-19 data in different ways.
+## [Representing COVID-19 Data](https://jovanycota.github.io/GEOG-176A-lab/lab-02.html)
+- This project allowed me to represent Real-Time COVID-19 data (at the time) using various different charts and graphs.
 
 ![](img/lab02.png)
 
