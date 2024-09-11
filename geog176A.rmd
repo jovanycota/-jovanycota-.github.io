@@ -6,8 +6,45 @@ These projects were executed with the help of a variety of programs, including R
 
 The links below can be used to view the code and process used to create the outputs. 
 
+## The Impact of COVID-19 in Wildfire Impacted Areas
+- Understanding whether or not a change in the average of COVID-19 cases is related to the presence of a wildfire nearby. 
+- Used anonymous GPS pings from mobile devices of an area to track population flow patterns utilizing Rstudio and ArcGis.
+
+![](img/c19wf.png)
+
+
+## Distribution of the Land Cover Change in Delhi, India
+- Visualized the rate of change in land cover for Dehli. 
+- Raster data was used in Rstudio. 
+
+![](img/dehli_lcc.pdf)
+
+
+## Raster Analysis: Land Use in California
+- Utilized raster data and satellite imagery to differentiate between various forms of land use in QGIS.
+
+![](img/LAB-01.png)
+
+
+## Distribution of COVID-19 cases in CA 
+- Vector data was collected from multiple sources and used in QGIS to create this map.
+
+![](img/ca-covid-geog183.png)
+
+
+## Distribution of COVID-19 Deaths in CA
+-Vector data was collected from multiple sources and used in QGIS to create this map.
+
+![](img/lab03_geog183.png)
+
+
+## Distribution of CA Countie's Populations
+
+![](img/geog183_final_proj.png)
+
 ## [Representing COVID-19 Data](https://jovanycota.github.io/GEOG-176A-lab/lab-02.html)
-- This project allowed me to represent Real-Time COVID-19 data (at the time) using various different charts and graphs.
+- Representing Real-Time COVID-19 data (at the time) using various different charts and graphs.
+- Usng different sources of data in Rstudio to create outputs. 
 
 ![](img/lab02.png)
 
@@ -19,7 +56,7 @@ The links below can be used to view the code and process used to create the outp
 
 
 ## [Distribution of Dams in U.S.](https://jovanycota.github.io/GEOG-176A-lab/lab-04.html)
-- Using different tessellations in order to highlight specific uses of Dams in the U.S. and differentiate between them in a map. 
+- Used different tessellations in order to highlight specific uses of Dams in the U.S. and differentiate between them in a map. 
 - Vector data was used in Rstudio for the creation of the maps. 
 
 ![](img/lab04.jpg)
@@ -27,7 +64,7 @@ The links below can be used to view the code and process used to create the outp
 
 
 ## [Raster Analysis: Floods](https://jovanycota.github.io/GEOG-176A-lab/lab-05.html)
-- Using raster data to study the impact of floods in an area.
+- Utilized raster data to study the impact of floods in an area.
 - Rstudio was used for this analysis. 
 
 ![](img/lab05.jpg)
