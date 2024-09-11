@@ -2,7 +2,9 @@
 title: "Projects"
 ---
 
-These projects were completed using the following: Rstudio, ArcGIS, QGIS, Inkscape, GIMP, MATLAB & GEODA
+These projects were executed with the help of a variety of programs, including RStudio, ArcGIS, QGIS, Inkscape, GIMP, MATLAB, and GeoDa. Through these experiences, I gained valuable expertise in working with both vector and raster data.
+
+The links below can be used to view the code and process used to create the outputs. 
 
 ## [Representing COVID-19 Data](https://jovanycota.github.io/GEOG-176A-lab/lab-02.html)
 - This project allowed me to represent Real-Time COVID-19 data (at the time) using various different charts and graphs.
@@ -10,43 +12,38 @@ These projects were completed using the following: Rstudio, ArcGIS, QGIS, Inksca
 ![](img/lab02.png)
 
 
-## [Lab 3](https://jovanycota.github.io/GEOG-176A-lab/lab-03.html)
-- I learned how to turn objects into simple feature objects.
-- I learned how to change an objects geographic coordinate system.
-- I learned that all geometries are composed of point features.
-- In this lab, I represented different sets of data within a certain range from a borderI 
+## [Representing U.S. Cities and Distance](https://jovanycota.github.io/GEOG-176A-lab/lab-03.html)
+- Visually representing U.S. cities based on population and distance to different borders.
 
 ![](img/lab03.jpg)
 
 
-## [Lab 4](https://jovanycota.github.io/GEOG-176A-lab/lab-04.html)
-- I learned how to filter objects spatially.
-- I learned how to properly use Unary (single) and Binary (multi) feature operations.
-- I learned how to formulate functions for my own benefit.
-- In this lab, I represented data in different tesselations in order to highlight a certain aspect of dams and differentiate between them
+## [Distribution of Dams in U.S.](https://jovanycota.github.io/GEOG-176A-lab/lab-04.html)
+- Using different tessellations in order to highlight specific uses of Dams in the U.S. and differentiate between them in a map. 
+- Vector data was used in Rstudio for the creation of the maps. 
 
 ![](img/lab04.jpg)
 
 
 
-## [Lab 5](https://jovanycota.github.io/GEOG-176A-lab/lab-05.html)
-- I learned how to crop and mask raster data.
-- I learned how to use open street map and apply it to my coding.
-- In this lab, I visually displayed the impacts of a flood on a specific area of interest.
+## [Raster Analysis: Floods](https://jovanycota.github.io/GEOG-176A-lab/lab-05.html)
+- Using raster data to study the impact of floods in an area.
+- Rstudio was used for this analysis. 
 
 ![](img/lab05.jpg)
 
 
-## [Lab 6](https://jovanycota.github.io/GEOG-176A-lab/lab-06.html)
-- I learned how to use slope, aspect, and hillshade functions.
-- I learned how to use whitebox.
-- In this lab, I applied everything I have learned throughout the course.
+## [Impact of Floods](https://jovanycota.github.io/GEOG-176A-lab/lab-06.html)
+- Time lapse of the impact on buildings during a flood.
+- Raster data was used in Rstudio to create this figure. 
 
 ![](img/download.gif)
 
-### GEOG 176C
 
-# FINAL PROJECT
+
+## Distribution of Tsunamis Caused by Earthquakes
+- Historical data of locations of Tsunamis was used to create this map.
+- Map was created using QGIS. 
 
 ![](img/geog165.png)
 

@@ -13,24 +13,38 @@
 
 <title>Projects</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -43,32 +57,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -78,10 +68,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -98,40 +84,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -159,7 +121,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -171,7 +133,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -181,11 +143,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -197,13 +176,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -211,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -264,12 +235,12 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Jovany's Website</a>
+      <a class="navbar-brand" href="index.html">Jovany's Portfolio</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -295,13 +266,6 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-  <a href="geog165.html">
-    <span class="fa fa-pen"></span>
-     
-    GEOG 165
-  </a>
-</li>
-<li>
   <a href="resume.html">
     <span class="fa fa-file"></span>
      
@@ -324,7 +288,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -333,55 +297,64 @@ $(document).ready(function () {
 </div>
 
 
-<p>In the second-half of Summer 2020, I took an introductory course about GIS based in R. I wrote some code, and did some cool data science. Here is a collection of links!</p>
-<div id="geog-176a" class="section level3">
-<h3>GEOG 176A</h3>
-</div>
-<div id="lab-2" class="section level2">
-<h2><a href="https://jovanycota.github.io/GEOG-176A-lab/lab-02.html">Lab 2</a></h2>
+<p>These projects were completed using the following: Rstudio, ArcGIS,
+QGIS, Inkscape, GIMP, MATLAB &amp; GEODA</p>
+<div id="representing-covid-19-data" class="section level2">
+<h2><a
+href="https://jovanycota.github.io/GEOG-176A-lab/lab-02.html">Representing
+COVID-19 Data</a></h2>
 <ul>
-<li>I learned how to properly plot graphs using the ggplot function.</li>
-<li>I learned how to join two different data sets together using the left, right, inner, full, and semi join functions and the difference between each of them.</li>
-<li>I learned how to apply lag and rolling functions for feature-based time data.</li>
-<li>In this lab, I chose how to visually represent real-time COVID-19 data in different ways.</li>
+<li>This project allowed me to represent Real-Time COVID-19 data (at the
+time) using various different charts and graphs.</li>
 </ul>
 <p><img src="img/lab02.png" /></p>
 </div>
 <div id="lab-3" class="section level2">
-<h2><a href="https://jovanycota.github.io/GEOG-176A-lab/lab-03.html">Lab 3</a></h2>
+<h2><a href="https://jovanycota.github.io/GEOG-176A-lab/lab-03.html">Lab
+3</a></h2>
 <ul>
 <li>I learned how to turn objects into simple feature objects.</li>
-<li>I learned how to change an objects geographic coordinate system.</li>
+<li>I learned how to change an objects geographic coordinate
+system.</li>
 <li>I learned that all geometries are composed of point features.</li>
-<li>In this lab, I represented different sets of data within a certain range from a borderI</li>
+<li>In this lab, I represented different sets of data within a certain
+range from a borderI</li>
 </ul>
 <p><img src="img/lab03.jpg" /></p>
 </div>
 <div id="lab-4" class="section level2">
-<h2><a href="https://jovanycota.github.io/GEOG-176A-lab/lab-04.html">Lab 4</a></h2>
+<h2><a href="https://jovanycota.github.io/GEOG-176A-lab/lab-04.html">Lab
+4</a></h2>
 <ul>
 <li>I learned how to filter objects spatially.</li>
-<li>I learned how to properly use Unary (single) and Binary (multi) feature operations.</li>
+<li>I learned how to properly use Unary (single) and Binary (multi)
+feature operations.</li>
 <li>I learned how to formulate functions for my own benefit.</li>
-<li>In this lab, I represented data in different tesselations in order to highlight a certain aspect of dams and differentiate between them</li>
+<li>In this lab, I represented data in different tesselations in order
+to highlight a certain aspect of dams and differentiate between
+them</li>
 </ul>
 <p><img src="img/lab04.jpg" /></p>
 </div>
 <div id="lab-5" class="section level2">
-<h2><a href="https://jovanycota.github.io/GEOG-176A-lab/lab-05.html">Lab 5</a></h2>
+<h2><a href="https://jovanycota.github.io/GEOG-176A-lab/lab-05.html">Lab
+5</a></h2>
 <ul>
 <li>I learned how to crop and mask raster data.</li>
 <li>I learned how to use open street map and apply it to my coding.</li>
-<li>In this lab, I visually displayed the impacts of a flood on a specific area of interest.</li>
+<li>In this lab, I visually displayed the impacts of a flood on a
+specific area of interest.</li>
 </ul>
 <p><img src="img/lab05.jpg" /></p>
 </div>
 <div id="lab-6" class="section level2">
-<h2><a href="https://jovanycota.github.io/GEOG-176A-lab/lab-06.html">Lab 6</a></h2>
+<h2><a href="https://jovanycota.github.io/GEOG-176A-lab/lab-06.html">Lab
+6</a></h2>
 <ul>
 <li>I learned how to use slope, aspect, and hillshade functions.</li>
 <li>I learned how to use whitebox.</li>
-<li>In this lab, I applied everything I have learned throughout the course.</li>
+<li>In this lab, I applied everything I have learned throughout the
+course.</li>
 </ul>
 <p><img src="img/download.gif" /></p>
 <div id="geog-176c" class="section level3">
@@ -405,7 +378,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -423,7 +396,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
