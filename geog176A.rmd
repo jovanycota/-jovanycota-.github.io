@@ -2,20 +2,17 @@
 title: " GIS Projects"
 ---
 
-These projects were executed with the help of a variety of programs, including RStudio, ArcGIS, QGIS, Inkscape, GIMP, MATLAB, and GeoDa. Through these experiences, I gained valuable expertise in working with both vector and raster data.
+These projects were executed with the utilization of a variety of programs, including: RStudio, ArcGIS, QGIS, Inkscape, GIMP, MATLAB, and GeoDa. 
 
 The links below can be used to view the code and process used to create the outputs. 
 
 ## The Impact of COVID-19 in Wildfire Impacted Areas
-- Understanding whether or not a change in the average of COVID-19 cases is related to the presence of a wildfire nearby. 
-- Used anonymous GPS pings from mobile devices of an area to track population flow patterns utilizing Rstudio and ArcGis.
 
 ![](img/IMG_1861.PNG)
 
 
 ## Distribution of the Land Cover Change in Delhi, India
-- Visualized the rate of change in land cover for Dehli. 
-- Raster data was used in Rstudio. 
+*My role in this project was conducting the raster analysis on the area of interest and creating the graphs.
 
 ![](img/dehli_lcc.pdf)
 
@@ -27,24 +24,21 @@ The links below can be used to view the code and process used to create the outp
 
 
 ## Distribution of COVID-19 cases in CA 
-- Vector data was collected from multiple sources and used in QGIS to create this map.
 
 ![](img/ca-covid-geog183.png)
 
 
 ## Distribution of COVID-19 Deaths in CA
--Vector data was collected from multiple sources and used in QGIS to create this map.
 
 ![](img/lab03_geog183.png)
 
 
-## Distribution of CA Countie's Populations
+## Distribution of populations in California counties
 
 ![](img/geog183_final_proj.png)
 
 ## [Representing COVID-19 Data](https://jovanycota.github.io/GEOG-176A-lab/lab-02.html)
-- Representing Real-Time COVID-19 data (at the time) using various different charts and graphs.
-- Usng different sources of data in Rstudio to create outputs. 
+- Representing COVID-19 data using various types of charts and graphs.
 
 ![](img/lab02.png)
 
@@ -56,31 +50,25 @@ The links below can be used to view the code and process used to create the outp
 
 
 ## [Distribution of Dams in U.S.](https://jovanycota.github.io/GEOG-176A-lab/lab-04.html)
-- Used different tessellations in order to highlight specific uses of Dams in the U.S. and differentiate between them in a map. 
-- Vector data was used in Rstudio for the creation of the maps. 
+- Using different tessellations in order to highlight specific uses of Dams in the U.S. and differentiate between them in a map. 
 
 ![](img/lab04.jpg)
 
 
-
 ## [Raster Analysis: Floods](https://jovanycota.github.io/GEOG-176A-lab/lab-05.html)
-- Utilized raster data to study the impact of floods in an area.
-- Rstudio was used for this analysis. 
+- Utilizing raster data to study the impact of floods in an area.
 
 ![](img/lab05.jpg)
 
 
 ## [Impact of Floods](https://jovanycota.github.io/GEOG-176A-lab/lab-06.html)
-- Time lapse of the impact on buildings during a flood.
-- Raster data was used in Rstudio to create this figure. 
+- Analyzing the flood risk in an area.
 
 ![](img/download.gif)
 
 
 
-## Distribution of Tsunamis Caused by Earthquakes
-- Historical data of locations of Tsunamis was used to create this map.
-- Map was created using QGIS. 
+## Historical Distribution of Tsunamis Caused by Earthquakes
 
 ![](img/geog165.png)
 

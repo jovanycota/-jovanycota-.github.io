@@ -8,13 +8,11 @@ title: "About Me"
 # Hello, I'm [Jovany Cota](https://www.linkedin.com/in/jovany-cota-87aa61178/).
 </center>
   
-I am a GIS Analyst from Los Angeles, CA, with a Bachelor’s degree in Geography, specializing in Geographic Information Systems (GIS), from the University of California, Santa Barbara (Class of 2022). As a dedicated Latino professional, I am passionate about leveraging my expertise in GIS to drive innovative solutions and contribute to impactful projects.
+I am an aspiring GIS analyst/technician from Los Angeles, CA, with a Bachelor’s degree in Geography, specializing in geographic information science (GIS), from the University of California, Santa Barbara (Class of 2022). I am passionate about leveraging my experience in GIS to drive innovative solutions and contribute to projects.
 
-Currently, I am employed as a Field Data Specialist at IDplans, where I have been contributing to saving companies millions of dollars in utility bills since April 2023. I am seeking new opportunities to advance my career in GIS, where I can leverage my skills and grow professionally.
+Currently, I am employed as a Data Quality Assurance lead for TEKsystems, where I am a contractor for Apple. I have held this position since December 2024 and I am currently in the process of applying to graduate school so I can obtain my masters degree in GIScience. Although my current position is unrelated to GIS, I have learned valuable team/project management skills, as well as experience working with large sets of data.
 
-I am particularly interested in positions that offer a balance between professional development and proximity to my home base in Los Angeles, CA. My decision to seek a new role is driven by a desire to learn more.
-
-This website is a collection of GIS projects I have completed. For security and privacy reasons, I am unable to share projects I have been involved in my current and previous positions. 
+This website is a collection of GIS projects I have completed. For security and privacy reasons, I am unable to share professional projects I have been involved in the past in previous positions. 
 
 # Contact
   - Email: cotajovany03@gmail.com
