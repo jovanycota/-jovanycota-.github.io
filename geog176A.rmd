@@ -1,39 +1,39 @@
----
-title: " GIS Projects"
----
+
+# **<u>GIS Projects</u>**
+
 
 These projects were executed with the utilization of a variety of programs, including: RStudio, ArcGIS, QGIS, Inkscape, GIMP, MATLAB, and GeoDa. 
 
 The links below can be used to view the code and process used to create the outputs. 
 
-## The Impact of COVID-19 in Wildfire Impacted Areas
+## **The Impact of COVID-19 in Wildfire Impacted Areas**
 
 ![](img/IMG_1861.PNG)
 
 
-## Distribution of the Land Cover Change in Delhi, India
-*My role in this project was conducting the raster analysis on the area of interest and creating the graphs.
+## **Distribution of the Land Cover Change in Delhi, India**
+*My role in this group project was conducting the raster analysis on the area of interest and creating the graphs.*
 
 ![](img/dehli_lcc.pdf)
 
 
-## Raster Analysis: Land Use in California
+## **Raster Analysis: Land Use in California**
 - Utilized raster data and satellite imagery to differentiate between various forms of land use in QGIS.
 
 ![](img/LAB-01.png)
 
 
-## Distribution of COVID-19 cases in CA 
+## **Distribution of COVID-19 cases in CA** 
 
 ![](img/ca-covid-geog183.png)
 
 
-## Distribution of COVID-19 Deaths in CA
+## **Distribution of COVID-19 Deaths in CA**
 
 ![](img/lab03_geog183.png)
 
 
-## Distribution of populations in California counties
+## **Distribution of populations in California counties**
 
 ![](img/geog183_final_proj.png)
 
@@ -68,7 +68,7 @@ The links below can be used to view the code and process used to create the outp
 
 
 
-## Historical Distribution of Tsunamis Caused by Earthquakes
+## **Historical Distribution of Tsunamis Caused by Earthquakes**
 
 ![](img/geog165.png)
 

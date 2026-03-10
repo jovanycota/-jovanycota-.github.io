@@ -1,8 +1,7 @@
 
 
----
-title: "About Me" 
----
+# **<u>About Me</u>** 
+
   
 <center>
 # Hello, I'm [Jovany Cota](https://www.linkedin.com/in/jovany-cota-87aa61178/).
@@ -14,7 +13,7 @@ Currently, I am employed as a Data Quality Assurance lead for TEKsystems, where 
 
 This website is a collection of GIS projects I have completed. For security and privacy reasons, I am unable to share professional projects I have been involved in the past in previous positions. 
 
-# Contact
+### **<u>Contact</u>**
   - Email: cotajovany03@gmail.com
   - Phone: (323) 901-0442
   
